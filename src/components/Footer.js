@@ -15,7 +15,7 @@ const Footer = ({ onDeleteCompleted }) => (
     <FilterLink filter={VisibilityFilters.SHOW_COMPLETED}>
       Completed
     </FilterLink>
-    <button onClick={onDeleteCompleted}>
+    <button data-test='delete-completed-button' onClick={onDeleteCompleted}>
       delete completed
     </button>
   </div>
